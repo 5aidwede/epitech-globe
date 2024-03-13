@@ -33,7 +33,7 @@ export default function Home() {
     <>
       <img src="/epit-techno.png" className="w-[500px] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" alt="" />
       <div className="fixed w-screen h-screen top-0 left-0">
-        { mapData != null &&
+        { mapData != null && typeof window !== "undefined" &&
           <Globe
                 hexPolygonsData={mapData.features}
                 showAtmosphere = {false}
