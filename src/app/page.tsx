@@ -37,6 +37,7 @@ export default function Home() {
           <Globe
                 hexPolygonsData={mapData.features}
                 showAtmosphere = {false}
+                hexPolygonUseDots = {true}
                 showGlobe = {false}
                 hexPolygonColor={() => '#ffffff'}
                 htmlElementsData = {markerData}
